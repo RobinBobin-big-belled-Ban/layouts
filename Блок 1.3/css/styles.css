@@ -194,9 +194,9 @@ body {
 .nav {
     display: flex;
     flex-flow: row nowrap;
-    overflow: hidden;
+    overflow-x: scroll;
     width: auto;
-    height: 2.5em;
+    height: 3.5em;
     padding-left: 1em;
 }
 
@@ -218,11 +218,15 @@ body {
     text-decoration: none;
 }
 
-.nav__link-container--active {
+/*active link*/
+
+.nav__link-container:nth-child(2) {
     background: #FFFFFF;
     border: 2px solid #B8FFEC;
     border-radius: .375em;
 }
+
+/*active link*/
 
 .nav__link-container:hover,
 .nav__link-container:active,
@@ -476,6 +480,8 @@ body {
 
     .nav {
         padding-left: 2em;
+        height: 2.5em;
+        overflow-x: hidden;
     }
 
     .nav__link-container:nth-child(1) {
@@ -486,6 +492,28 @@ body {
         display: none;
     }
 
+    /*active link*/
+
+    .nav__link-container:nth-child(2) {
+        background: initial;
+        border: 0;
+    }
+
+    .nav__link-container:nth-child(2):hover,
+    .nav__link-container:nth-child(2):active,
+    .nav__link-container:nth-child(2):focus {
+        background: #FFFFFF;
+        border: 2px solid #B8FFEC;
+        border-radius: .375em;
+    }
+
+    .nav__link-container:first-child {
+        background: #FFFFFF;
+        border: 2px solid #B8FFEC;
+        border-radius: .375em;
+    }
+
+    /*active link*/
     /*nav styles end*/
 
 
