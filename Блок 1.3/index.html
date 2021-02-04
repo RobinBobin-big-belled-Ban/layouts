@@ -10,84 +10,104 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <!--header start-->
         <header class="header">
-            <div class="header__logo">
-                <div class="header__burger header__burger_unvisible">
-                    <img src="./images/header/burger.svg" alt="burger">
+            <div class="header-top header-top--hidden">
+                <div class="burger-container">
+                    <button class="button-burger"></button>
                 </div>
-                <div class="header__divider header__divider_invisible">
-                    <img src="./images/header/divider.jpg" alt="divider">
+                <div class="line-devider line-devider--hidden">
                 </div>
-                <div class="header__group header__group_unvisible">
-                    <img src="./images/header/group.svg" alt="group">
+                <div class="group-container">
+                    <a href="#" class="a-group"></a>
                 </div>
-                <div class="header__moreIcons icons">
-                    <div class="icons__call">
-                        <img src="./images/header/call.svg" alt="call">
-                    </div>
-                    <div class="icons__chat">
-                        <img src="./images/header/chat.svg" alt="chat">
-                    </div>
-                    <div class="icons__profile">
-                        <img src="./images/header/profile.svg" alt="profile">
-                    </div>
+                <div class="more-icons more-icons--hidden">
+                    <button class="button-call"></button>
+                    <button class="button-chat"></button>
+                    <button class="button-profile"></button>
                 </div>
-                <div class="header__divider header__divider_hideUnvis">
-                    <img src="./images/header/divider.jpg" alt="divider">
+                <div class="line-devider">
                 </div>
-                <div class="header__repair">
-                    <span class="header__text">
-                        Оставить заявку
-                    </span>
-                    <img src="./images/header/repair.svg" alt="repair">
+                <div class="repair-container">
+                    <button class="button-repair"></button>
                 </div>
-                <div class="header__checkstatus">
-                    <span class="header__text">
-                        Статус ремонта
-                    </span>
-                    <img src="./images/header/checkstatus.svg" alt="checkstatus">
+                <div class="check-status-container">
+                    <button class="button-status"></button>
                 </div>
             </div>
-            <div class="header__shadow"></div>
-            <div class="header__h">
-                <h1 class="header__h1">Услуги и сервисы</h1>
+            <div class="header-bottom">
+                <div class="services">
+                    <span class="services__text">
+                        Услуги и сервисы
+                    </span>
+                </div>
+                <div class="text-buttons text-buttons--hidden">
+                    <div class="text-buttons__container">
+                        <span class="text-repair">
+                            Оставить заявку
+                        </span>
+                    </div>
+                    <div class="text-buttons__container">
+                        <button class="button-repair"></button>
+                    </div>
+                    <div class="text-buttons__container">
+                        <span class="text-status">
+                            Статус ремонта
+                        </span>
+                    </div>
+                    <div class="text-buttons__container">
+                        <button class="button-status"></button>
+                    </div>
+                </div>
             </div>
         </header>
         <!--header end-->
         <!--nav start-->
         <nav class="nav">
-            <div class="nav__linksContainer nav__linksContainer_active">
+            <div class="nav__link-container nav__link-container--active">
+                <a href="#" class="nav__link">Ремонтируемые бренды</a>
+            </div>
+            <div class="nav__link-container">
                 <a href="#" class="nav__link">Ремонтируемые устройства</a>
             </div>
-            <div class="nav__linksContainer">
+            <div class="nav__link-container">
                 <a href="#" class="nav__link">Дополнительные услуги</a>
             </div>
-            <div class="nav__linksContainer">
+            <div class="nav__link-container">
                 <a href="#" class="nav__link">Цены на услуги</a>
             </div>
-            <div class="nav__linksContainer">
+            <div class="nav__link-container">
+                <a href="#" class="nav__link">Адреса сервисных центров</a>
+            </div>
+            <div class="nav__link-container">
                 <a href="#" class="nav__link">Специальные цены</a>
             </div>
         </nav>
         <!--nav end-->
         <!--main start-->
         <main class="main">
-            <div class="wrap">
-                <article class="main__content">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                    <br>
-                    <br>
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                </article>
-                <div class="main__more">
-                    <a href="#" class="main__link">Читать далее</a>
-                </div>
+            <div class="main__reviews main__reviews--hidden">
+                <button>Отзывы</button>
             </div>
-            <figure class="main__imgConteiner">
-                <img src="images/main/_MG_3223.jpg" alt="picture_copy" class="main__img">
-            </figure>
+            <div class="information">
+                <section class="main__wrap">
+                    <div class="content">
+                        <div class="content__text">
+                            <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                            </p>
+                            <br>
+                            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                        </div>
+                    </div>
+                    <div class="show-more">
+                        <button>Читать далее</button>
+                    </div>
+                </section>
+                <figure class="content-img">
+                    <img src="images/main/_MG_3223.jpg" alt="info">
+                </figure>
+            </div>
         </main>
         <!--main end-->
     </div>
