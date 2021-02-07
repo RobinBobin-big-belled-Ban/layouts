@@ -1,0 +1,444 @@
+/* TT Lakes-regular*/
+@font-face {
+    font-family: 'TT Lakes';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/TTLakes-Regular.ttf') format('ttf'),
+        /*old format*/
+        url('../fonts/TTLakes-Regular.eot') format('eot'),
+        /* IE */
+        url('../fonts/TTLakes-Regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/TTLakes-Medium.ttf') format('ttf'),
+        /*old format*/
+        url('../fonts/TTLakes-Medium.eot') format('eot'),
+        /* IE */
+        url('../fonts/TTLakes-Medium.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/TTLakes-Bold.ttf') format('ttf'),
+        /*old format*/
+        url('../fonts/TTLakes-Bold.eot') format('eot'),
+        /* IE */
+        url('../fonts/TTLakes-Bold.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    font-size: calc(0.5em + lvw);
+}
+
+body {
+    font-family: 'TT Lakes';
+    font-weight: 400;
+}
+
+.m-container {
+    background: #F2F2F2;
+    overflow: hidden;
+    width: 20em;
+}
+
+/*m-header styles start*/
+
+.m-header {
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: .0125em;
+    color: #7E7E82;
+    padding: 1em;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+/*m-header styles end*/
+
+/*m-nav styles start*/
+
+.m-nav {
+    min-height: 9.625em;
+}
+
+.m-button-lenovo {
+    margin: 1em;
+    width: 15em;
+    height: 4.5em;
+    border: 1px solid #EAEAEA;
+    border-radius: .375em;
+    background:
+        url(../images/nav/go.svg),
+        url(../images/nav/lenovo.svg),
+        #fff;
+    background-position: 90.75% 50%, 16px 50%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+
+.m-button-samsung {
+    margin: 1em;
+    width: 15em;
+    height: 4.5em;
+    border: 1px solid #EAEAEA;
+    border-radius: .375em;
+    background:
+        url(../images/nav/go.svg),
+        url(../images/nav/samsung.svg),
+        #fff;
+    background-position: 90.75% 50%, 16px 50%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.m-button-apple {
+    margin: 1em;
+    width: 15em;
+    height: 4.5em;
+    border: 1px solid #EAEAEA;
+    border-radius: .375em;
+    background:
+        url(../images/nav/go.svg),
+        url(../images/nav/apple.svg),
+        #fff;
+    background-position: 90.75% 50%, 16px 40%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.m-button-sonic {
+    margin: 1em;
+    width: 15em;
+    height: 4.5em;
+    border: 1px solid #EAEAEA;
+    border-radius: .375em;
+    background:
+        url(../images/nav/go.svg),
+        url(../images/nav/viewSonic.svg),
+        #fff;
+    background-position: 90.75% 50%, 16px 50%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.m-button-bosch {
+    margin: 1em;
+    width: 15em;
+    height: 4.5em;
+    border: 1px solid #EAEAEA;
+    border-radius: .375em;
+    background:
+        url(../images/nav/go.svg),
+        url(../images/nav/bocsh.svg),
+        #fff;
+    background-position: 90.75% 50%, 16px 50%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.m-button-bosch {
+    margin: 1em;
+    width: 15em;
+    height: 4.5em;
+    border: 1px solid #EAEAEA;
+    border-radius: .375em;
+    background:
+        url(../images/nav/go.svg),
+        url(../images/nav/bocsh.svg),
+        #fff;
+    background-position: 90.75% 50%, 16px 50%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.m-button-hp {
+    margin: 1em;
+    width: 15em;
+    height: 4.5em;
+    border: 1px solid #EAEAEA;
+    border-radius: .375em;
+    background:
+        url(../images/nav/go.svg),
+        url(../images/nav/hp.svg),
+        #fff;
+    background-position: 90.75% 50%, 16px 50%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.m-button-acer {
+    margin: 1em;
+    width: 15em;
+    height: 4.5em;
+    border: 1px solid #EAEAEA;
+    border-radius: .375em;
+    background:
+        url(../images/nav/go.svg),
+        url(../images/nav/acer.svg),
+        #fff;
+    background-position: 90.75% 50%, 16px 50%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.m-button-sony {
+    margin: 1em;
+    width: 15em;
+    height: 4.5em;
+    border: 1px solid #EAEAEA;
+    border-radius: .375em;
+    background:
+        url(../images/nav/go.svg),
+        url(../images/nav/sony.svg),
+        #fff;
+    background-position: 90.75% 50%, 16px 50%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.m-nav__container button:active,
+.m-nav__container button:hover,
+.m-nav__container button:focus {
+    box-shadow: 0 0 .5em lightgrey;
+}
+
+.m-pagginator-position {
+    margin-bottom: 1.5em;
+}
+
+.swiper-slide:last-child {
+    display: none;
+}
+
+.swiper-slide:nth-child(10) {
+    display: none;
+}
+
+.m-nav__more_hidden {
+    display: none;
+}
+
+/*m-nav styles end*/
+
+
+/*media queries start*/
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .m-container {
+        width: 48em;
+    }
+
+
+    /* m-header styles start*/
+
+    .m-header {
+        padding-left: 1.5em;
+    }
+
+    /* m-header styles end*/
+
+
+    /*m-nav styles start*/
+    .m-nav {
+        padding-bottom: 2.5em;
+    }
+
+    .m-pagginator-position--hidden {
+        display: none;
+    }
+
+    .m-nav__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 60.5em;
+        padding-top: 1.5em;
+        height: 10.5em;
+        width: 48em;
+        overflow: hidden;
+    }
+
+    .m-nav__container--large {
+
+        height: auto;
+
+    }
+
+    .swiper-slide {
+        width: 14em;
+        height: 4.5em;
+        margin-left: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .swiper-slide:last-child,
+    .swiper-slide:nth-child(10) {
+        display: block;
+    }
+
+    .m-button-lenovo,
+    .m-button-samsung,
+    .m-button-apple,
+    .m-button-sonic,
+    .m-button-bosch,
+    .m-button-hp,
+    .m-button-acer,
+    .m-button-sony {
+        margin: 0;
+        padding: 0;
+        width: 14em;
+        height: 4.5em;
+    }
+
+    .swiper-slide:nth-child(4),
+    .swiper-slide:nth-child(8) {
+        display: none;
+        background: red;
+    }
+
+    .m-nav__more {
+        font-size: 1rem;
+        padding-left: 2em;
+        margin-top: 1em;
+    }
+
+    .m-nav__more_hidden {
+        display: block;
+    }
+
+    .m-button-show-more {
+        border: none;
+        padding-left: 1.5em;
+        background-image: url(../images/nav/icon.svg);
+        background-color: inherit;
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        line-height: 1.5;
+        letter-spacing: -0.0125em;
+        color: #1B1C21;
+        font-weight: 500;
+    }
+
+    .m-button-show-more:active,
+    .m-button-show-more:hover,
+    .m-button-show-more:focus {
+        opacity: .5;
+    }
+
+    /*m-nav styles end*/
+
+}
+
+@media (min-width: 769px) {
+
+    .m-container {
+        width: 70em;
+        margin: 0 auto;
+    }
+
+    /* m-header styles start*/
+
+    .m-header {
+        padding-left: 2em;
+    }
+
+    /* m-header styles end*/
+
+
+    /*m-nav styles start*/
+    .m-nav {
+        padding-bottom: 2.5em;
+    }
+
+    .m-pagginator-position--hidden {
+        display: none;
+    }
+
+    .m-nav__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 1.5em;
+        height: 10.5em;
+        width: 70em;
+        overflow: hidden;
+    }
+
+    .m-nav__container--large {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 1.5em;
+    }
+
+    .swiper-slide {
+        width: 15em;
+        height: 4.5em;
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+
+    .swiper-slide:last-child,
+    .swiper-slide:nth-child(10) {
+        display: block;
+    }
+
+    .m-button-lenovo,
+    .m-button-samsung,
+    .m-button-apple,
+    .m-button-sonic,
+    .m-button-bosch,
+    .m-button-hp,
+    .m-button-acer,
+    .m-button-sony {
+        margin: 0;
+        padding: 0;
+        width: 15em;
+        height: 4.5em;
+    }
+
+    .m-nav__more {
+        font-size: 1rem;
+        padding-left: 2.5em;
+        margin-top: 1em;
+    }
+
+    .m-nav__more_hidden {
+        display: block;
+    }
+
+    .m-button-show-more {
+        border: none;
+        padding-left: 1.5em;
+        background-image: url(../images/nav/icon.svg);
+        background-color: inherit;
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        line-height: 1.5;
+        letter-spacing: -0.0125em;
+        color: #1B1C21;
+        font-weight: 500;
+    }
+
+    .m-button-show-more:active,
+    .m-button-show-more:hover,
+    .m-button-show-more:focus {
+        opacity: .5;
+    }
+}
