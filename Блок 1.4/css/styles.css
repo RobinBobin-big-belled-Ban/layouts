@@ -91,12 +91,18 @@ body {
     background-repeat: no-repeat;
 }
 
-.b-button-group {
+.b-link-group {
+    display: block;
     width: 6.0625em;
     height: 3.1875em;
-    border: none;
     background: url(../images/header/group.svg);
     background-repeat: no-repeat;
+}
+
+.b-link-group:hover,
+.b-link-group:active,
+.b-link-group:focus {
+    opacity: .5;
 }
 
 .b-button-search {
