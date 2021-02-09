@@ -15,6 +15,19 @@
 @font-face {
     font-family: 'TT Lakes';
     font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/TTLakes-Medium.ttf') format('ttf'),
+        /*old format*/
+        url('../fonts/TTLakes-Medium.eot') format('eot'),
+        /* IE */
+        url('../fonts/TTLakes-Medium.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    font-style: normal;
     font-weight: 700;
     src: local(''),
         url('../fonts/TTLakes-Bold.ttf') format('ttf'),
@@ -142,7 +155,7 @@ body {
     text-decoration: none;
     font-size: 1rem;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.0125px;
     color: #1B1C21;
 }
@@ -215,27 +228,37 @@ body {
 }
 
 .b-footer__mail {
+    display: block;
     font-size: 1rem;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: -0.0125em;
     color: inherit;
     padding-left: 1.5em;
     margin-top: 1em;
+    text-decoration: none;
 }
 
 .b-footer__phone {
+    display: block;
+    color: #1B1C21;
     font-size: 1.5rem;
     font-weight: 700;
     margin-left: 1em;
     margin-top: .5em;
+    text-decoration: none;
 }
 
 .b-footer__lang-container {
-    font-size: 1rem;
-    line-height: 1.5;
     margin-top: 2.5em;
     margin-left: 1.5em;
     margin-bottom: 2em;
+}
+
+.b-footer__lang {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 .b-footer__lang-container>a {
@@ -249,9 +272,15 @@ body {
     margin-left: 0;
 }
 
-.b-footer__lang-container>a:hover,
-.b-footer__lang-container>a:focus,
-.b-footer__lang-container>a:active {
+.b-footer__phone:hover,
+.b-footer__phone:active,
+.b-footer__phone:focus,
+.b-footer__mail:hover,
+.b-footer__mail:active,
+.b-footer__mail:focus,
+.b-footer__lang:hover,
+.b-footer__lang:active,
+.b-footer__lang:focus {
     color: #7E7E82;
 }
 
