@@ -1,0 +1,149 @@
+.t-container {
+  max-width: 1120 / 16 * 1em;
+  margin: 0 auto;
+  background: #F8F8F8;
+
+  &::before {
+    display: block;
+    content: "";
+    width: auto;
+    height: 1px;
+    background: #D9FFF5;
+  }
+}
+
+.t-nav {
+  height: 244 / 16 * 1em;
+  padding-left: 1em;
+  padding-top: 1em;
+
+  @include mq-medium {
+    height: auto;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+  }
+
+  @include mq-large {
+    height: auto;
+    padding-left: 2em;
+    padding-top: 1.5em;
+  }
+
+  &__container {
+    @include mq-medium {
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      width: 768px;
+      height: 160 / 16 * 1em;
+    }
+
+    @include mq-large {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      height: 160 / 16 * 1em;
+    }
+  }
+
+  &__more {
+    display: none;
+
+    @include mq-medium {
+      display: block;
+      padding: 1.5em 0 2em .5em;
+    }
+
+    @include mq-large {
+      display: block;
+      padding: 1.5em 0 3em .5em;
+    }
+  }
+}
+
+.t-nav__container--large {
+  height: auto;
+}
+
+.t-card {
+  height: 160 / 16 * 1em;
+  width: 240 / 16 * 1em;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  position: relative;
+
+  @include mq-medium {
+    width: 224 / 16 * 1em;
+    margin-right: 1.25em;
+  }
+
+  @include mq-large {
+    width: 240 / 16 * 1em;
+    margin-right: 1.75em;
+  }
+
+  &__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: -0.2 / 16 * 1em;
+    font-weight: 500;
+    color: #1B1C21;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+  }
+
+  &__arrow {
+    width: 2.5em;
+    height: 2.5em;
+    border: none;
+    border-radius: 50%;
+    background: url(../img/nav/go.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    transition: 1s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      transform: rotate(450deg);
+      opacity: .5;
+    }
+  }
+}
+
+.t-pagginator-position {
+  margin-bottom: 1.5em;
+
+  @include mq-medium {
+    display: none;
+  }
+
+  @include mq-medium {
+    display: none;
+  }
+}
+
+.t-button-show-more {
+  border: none;
+  padding-left: 1.5em;
+  background-image: url(../img/nav/icon.svg);
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  line-height: 1.5;
+  letter-spacing: -0.0125em;
+  color: #1B1C21;
+  font-weight: 500;
+  font-family: 'TT Lakes'
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
+}

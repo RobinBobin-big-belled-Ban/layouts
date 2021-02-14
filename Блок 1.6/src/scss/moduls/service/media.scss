@@ -1,0 +1,33 @@
+$screen-small : 530px;
+$screen-medium : 768px;
+$screen-larger: 1120px;
+$screen-mega-larger: 1440px;
+
+/*@mixin mq-small-up {
+  @media (min-width: $screen-small) {
+    @content;
+  }
+}*/
+
+@mixin mq-medium {
+  @media (min-width: $screen-small) and (max-width: $screen-medium) {
+    @content;
+  }
+}
+
+@mixin mq-large {
+  @media (min-width: $screen-medium + 1px) {
+    @content;
+  }
+}
+
+@mixin mq-mega-large {
+  @media (min-width: $screen-mega-larger) {
+    @content;
+  }
+}
+
+
+
+
+/*specials*/

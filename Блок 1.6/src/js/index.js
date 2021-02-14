@@ -1,0 +1,8 @@
+import '../scss/style.scss'
+import './first-swiper.js'
+import './second-swiper.js'
+import './third-swiper.js'
+import './burger-menu/burger-menu.js'
+import './burger-menu/delete-menu.js'
+import './forms/form-callback.js'
+import './forms/form-feedback.js'

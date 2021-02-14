@@ -1,0 +1,183 @@
+.cb-wrapper {
+  display: none;
+}
+
+.cb-wrapper-on {
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 676 / 16 * 1em;
+  z-index: 200;
+  background-color: $bg-white;
+
+  @include mq-medium {
+    min-height: 940 / 16 * 1em;
+  }
+
+  @include mq-large {
+    min-height: 940 / 16 * 1em;
+  }
+}
+
+.cb-form {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: $bg-white;
+  min-height: 676 / 16 * 1em;
+  width: 320px;
+  z-index: 2;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+
+  @include mq-medium {
+    width: 440 / 16 * 1em;
+    min-height: 940 / 16 * 1em;
+  }
+
+  @include mq-large {
+    width: 440 / 16 * 1em;
+    min-height: 940 / 16 * 1em;
+  }
+
+  &__header {
+    height: 64 / 16 * 1em;
+
+    @include mq-medium {
+      display: none;
+    }
+
+    @include mq-large {
+      display: none;
+    }
+
+  }
+
+  &__button-container {
+    transform: translate(-120px, -274px);
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: .5;
+    }
+
+    @include mq-medium {
+      transform: translate(-200px, -269 + 88px);
+    }
+
+    @include mq-large {
+      transform: translate(-200px, -269 + 88px);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__head-container {
+    display: flex;
+    align-items: center;
+    height: 2.5em;
+    background: url(../img/header/highlight.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  &__input-containe {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+  }
+
+  &__agreement-containe {
+    padding-left: 1em;
+    padding-right: 1em;
+
+    @include mq-medium {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+
+    @include mq-large {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
+
+  &__submit-containe {
+    transform: translate(160px);
+
+    @include mq-medium {
+      transform: translate(280px);
+    }
+
+    @include mq-large {
+      transform: translate(280px);
+    }
+  }
+}
+
+.h-main {
+  font-size: 24 / 16 * 1rem;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: -0.6 / 24 * 1em;
+  color: $text-black;
+}
+
+.input-text {
+  width: 288 / 16 * 1em;
+  height: 3em;
+  border: 1px solid #EAEAEA;
+  border-radius: 8 / 16 * 1em;
+  padding-left: 1em;
+
+  @include mq-medium {
+    width: 370 / 16 * 1em;
+  }
+
+  @include mq-large {
+    width: 370 / 16 * 1em;
+  }
+}
+
+.agreement-text {
+  color: $text-grey;
+  font-weight: 500;
+  font-size: 14 / 16 * 1rem;
+  line-height: 16 / 14;
+
+  span {
+    color: $button-red;
+  }
+}
+
+.input-submit {
+  font-size: 12 / 16 * 1rem;
+  line-height: 2;
+  text-align: left;
+  padding-left: 1.75em;
+  width: 136 / 12 * 1em;
+  height: 32 / 12 * 1em;
+  border-radius: 16 / 12 * 1em;
+  border: none;
+  background:
+    url(../img/nav/dropdown.svg),
+    $button-red;
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  color: $text-white;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: .5;
+  }
+}

@@ -1,0 +1,57 @@
+.offer-wrapper {
+  height: 199 / 16 *1em;
+  max-width: 1120 / 16 * 1em;
+  background: #F8F8F8;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  @include mq-medium {
+    padding-left: 1.5em;
+    height: 204 / 16 * 1em;
+  }
+
+  @include mq-large {
+    padding-left: 2em;
+    height: 204 / 16 * 1em;
+  }
+
+  &__text {
+    font-size: 14 / 16 * 1rem;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: 0.2 / 16 * 1em;
+    color: #1B1C21;
+    padding-bottom: 1.5em;
+
+    @include mq-medium {
+      width: 451 / 16 * 1em;
+    }
+
+    @include mq-large {
+      width: 451 / 16 * 1em;
+    }
+  }
+
+  &__link {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: -0.2 / 16 * 1em;
+
+    a {
+      padding-right: 1.5em;
+      text-decoration: none;
+      color: #1B1C21;
+      background: url(../img/nav/line.svg);
+      background-repeat: no-repeat;
+      background-position: 98% 50%;
+
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: .5;
+      }
+    }
+  }
+}

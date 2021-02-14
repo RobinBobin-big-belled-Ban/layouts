@@ -1,0 +1,234 @@
+.p-container {
+  max-width: 1120 / 16 * 1em;
+  margin: 0 auto;
+  background: #F8F8F8;
+
+  &::before {
+    display: block;
+    content: "";
+    width: auto;
+    height: 1px;
+    background: #D9FFF5;
+  }
+}
+
+.p-nav {
+  height: 260 / 16 * 1em;
+  margin-top: 1em;
+
+  @include mq-medium {
+    height: 411 / 16 * 1em;
+  }
+
+  @include mq-large {
+    height: 411 / 16 * 1em;
+  }
+
+  &__container {
+    display: flex;
+    height: auto;
+
+    @include mq-medium {
+      flex-direction: column;
+      padding-left: 1.5em;
+    }
+
+    @include mq-large {
+      flex-direction: column;
+      padding-left: 1.5em;
+    }
+  }
+}
+
+.p-nav__content-header {
+  display: none;
+  margin-left: 1em;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #7E7E82;
+  opacity: 0.72;
+
+  @include mq-medium {
+    display: flex;
+    justify-content: flex-start;
+    height: 48 / 16 * 1em;
+    width: 720 / 16 * 1em;
+  }
+
+  @include mq-large {
+    display: flex;
+    justify-content: flex-start;
+    height: 48 / 16 * 1em;
+    width: 1056 / 16 * 1em;
+  }
+}
+
+.p-nav__content-services {
+  width: 398 / 16 * 1em;
+  margin: auto 0;
+
+  @include mq-large {
+    width: 534 / 16 * 1em;
+    margin: auto 0;
+  }
+}
+
+.p-nav__content-price {
+  width: 114 / 16 * 1em;
+  margin: auto 0;
+
+  @include mq-large {
+    width: 257 / 16 * 1em;
+    margin: auto 0;
+  }
+}
+
+.p-nav__content-time {
+  margin: auto 0;
+}
+
+.p-card {
+  position: relative;
+  height: 200 / 16 * 1em;
+  width: 260 / 16 * 1em;
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding-left: 1em;
+
+  @include mq-medium {
+    display: flex;
+    height: 64 / 16 * 1em;
+    width: 694 / 16 * 1em;
+  }
+
+  @include mq-large {
+    display: flex;
+    height: 64 / 16 * 1em;
+    width: 1046 / 16 * 1em;
+  }
+
+  &__one {
+    margin-top: 1em;
+    margin-bottom: .25em;
+  }
+
+  &__two {
+    margin-bottom: 1em;
+
+    @include mq-medium {
+      width: 398 / 16 * 1em;
+      margin: auto 0;
+    }
+
+    @include mq-large {
+      width: 534 / 16 * 1em;
+      margin: auto 0;
+    }
+  }
+
+  &__three {
+    margin-bottom: .25em;
+  }
+
+  &__four {
+    margin-bottom: 1em;
+
+    @include mq-medium {
+      width: 114 / 16 * 1em;
+      margin: auto 0;
+    }
+
+    @include mq-large {
+      width: 257 / 16 * 1em;
+      margin: auto 0;
+    }
+  }
+
+  &__five {
+    margin-bottom: .25em;
+  }
+
+  &__six {
+    @include mq-medium {
+      width: 111 / 16 * 1em;
+      margin: auto 0;
+    }
+
+    @include mq-large {
+      width: 111 / 16 * 1em;
+      margin: auto 0;
+    }
+  }
+}
+
+.p-card:first-child {
+  margin-left: 2.5em;
+
+  @include mq-medium {
+    margin-left: 0;
+  }
+
+  @include mq-large {
+    margin-left: 0;
+  }
+}
+
+.p-thead {
+  font-size: 14px;
+  line-height: 16px;
+  color: r#7E7E82;
+  opacity: 0.72;
+  font-weight: 500;
+
+  @include mq-medium {
+    display: none;
+  }
+
+  @include mq-large {
+    display: none;
+  }
+}
+
+.p-tbody {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+}
+
+.p-button {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  width: 119 / 16 * 1em;
+  height: 2em;
+  border: none;
+  border-radius: 16px;
+  background:
+    url(../img/nav/dropdown.svg),
+    #FF3E79;
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  text-transform: uppercase;
+  color: #fff;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: .5;
+  }
+}
+
+.p-button span {
+  font-size: 12 / 16 * 1rem;
+  line-height: 2;
+  font-weight: 700;
+  text-align: right;
+  margin-left: -2.5em;
+}
+
+.p-pagginator-position {
+  margin-bottom: .75em;
+}

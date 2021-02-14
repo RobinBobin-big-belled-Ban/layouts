@@ -1,0 +1,76 @@
+.fb-wrapper {
+  @extend .cb-wrapper;
+}
+
+.fb-wrapper-on {
+  @extend .cb-wrapper-on;
+}
+
+.fb-form {
+  @extend .cb-form;
+
+  &__header {
+    @extend .cb-form__header;
+  }
+
+  &__content {
+    @extend .cb-form__content;
+  }
+
+  &__head-container {
+    @extend .cb-form__head-container;
+    margin-bottom: 24px;
+  }
+
+  &__input-containe {
+    @extend .cb-form__input-containe;
+  }
+
+  &__textarea-containe {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  &__agreement-containe {
+    @extend .cb-form__agreement-containe;
+  }
+
+  &__submit-containe {
+    @extend .cb-form__submit-containe;
+  }
+
+  &__button-container {
+    transform: translate(-120px, -529px);
+
+    @include mq-medium {
+      transform: translate(-200px, -441px);
+    }
+
+    @include mq-large {
+      transform: translate(-200px, -441px);
+    }
+
+  }
+}
+
+.textarea-message {
+  height: 118 / 16 * 1em;
+  width: 288 / 16 * 1em;
+  border-radius: 8 / 16 * 1em;
+  border: 1px solid #EAEAEA;
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  color: $textarea-text;
+  padding-left: 1em;
+
+  @include mq-medium {
+    width: 376 / 16 * 1em;
+  }
+
+  @include mq-large {
+    width: 376 / 16 * 1em;
+  }
+}

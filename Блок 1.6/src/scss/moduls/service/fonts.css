@@ -1,0 +1,39 @@
+///* TT Lakes-regular*/
+@font-face {
+  font-family: 'TT Lakes';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/fonts/TTLakes-Regular.ttf') format('ttf'),
+    /*old format*/
+    url('/fonts/TTLakes-Regular.eot') format('eot'),
+    /* IE */
+    //url('/fonts/TTLakes-Regular.woff') format('woff');
+    //* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('/fonts/TTLakes-Medium.ttf') format('ttf'),
+    //*old format*/
+    url('/fonts/TTLakes-Medium.eot') format('eot'),
+    //* IE */
+    //url('/fonts/TTLakes-Medium.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('/fonts/TTLakes-Bold.ttf') format('ttf'),
+    /*old format*/
+    url('/fonts/TTLakes-Bold.eot') format('eot'),
+    /* IE */
+    //url('/fonts/TTLakes-Bold.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
