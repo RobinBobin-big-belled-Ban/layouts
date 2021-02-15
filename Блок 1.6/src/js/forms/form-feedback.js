@@ -1,9 +1,14 @@
 const chat = document.querySelector('.button-chat')
+const a_chat = document.querySelector('.a-chat')
 const fb_wrapper = document.querySelector('.fb-wrapper')
 const close_button = document.querySelector('.fb-form__button-container')
 
 
 chat.addEventListener('click', (event) => {
+  fb_wrapper.classList.add('fb-wrapper-on')
+})
+
+a_chat.addEventListener('click', (event) => {
   fb_wrapper.classList.add('fb-wrapper-on')
 })
 

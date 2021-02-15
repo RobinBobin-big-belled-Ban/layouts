@@ -1,14 +1,14 @@
 .p-container {
   max-width: 1120 / 16 * 1em;
   margin: 0 auto;
-  background: #F8F8F8;
+  background: $p-container-bg-color;
 
   &::before {
     display: block;
     content: "";
     width: auto;
     height: 1px;
-    background: #D9FFF5;
+    background: $pre-containers-hor-line;
   }
 }
 
@@ -17,10 +17,12 @@
   margin-top: 1em;
 
   @include mq-medium {
+    padding: 0 1.5em;
     height: 411 / 16 * 1em;
   }
 
   @include mq-large {
+    padding: 0 2em;
     height: 411 / 16 * 1em;
   }
 
@@ -30,28 +32,30 @@
 
     @include mq-medium {
       flex-direction: column;
-      padding-left: 1.5em;
+      border-radius: 6 / 16 * 1em;
+      background: $bg-white;
     }
 
     @include mq-large {
       flex-direction: column;
-      padding-left: 1.5em;
+      border-radius: 6 / 16 * 1em;
+      background: $bg-white;
     }
   }
 }
 
 .p-nav__content-header {
   display: none;
-  margin-left: 1em;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-  color: #7E7E82;
+  color: $text-grey;
   opacity: 0.72;
 
   @include mq-medium {
     display: flex;
     justify-content: flex-start;
+    margin-left: 1em;
     height: 48 / 16 * 1em;
     width: 720 / 16 * 1em;
   }
@@ -59,6 +63,7 @@
   @include mq-large {
     display: flex;
     justify-content: flex-start;
+    margin-left: 1.5em;
     height: 48 / 16 * 1em;
     width: 1056 / 16 * 1em;
   }
@@ -92,20 +97,41 @@
   position: relative;
   height: 200 / 16 * 1em;
   width: 260 / 16 * 1em;
-  background: #FFFFFF;
-  border-radius: 6px;
+  background: $bg-white;
+  border-radius: 6 / 16 * 1em;
   padding-left: 1em;
+
+  &::after {
+    @include mq-medium {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      width: 95%;
+      background: #eaeaea;
+    }
+
+    @include mq-large {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      width: 96%;
+      background: #eaeaea;
+    }
+  }
 
   @include mq-medium {
     display: flex;
     height: 64 / 16 * 1em;
-    width: 694 / 16 * 1em;
+    width: 710 / 16 * 1em;
   }
 
   @include mq-large {
     display: flex;
     height: 64 / 16 * 1em;
-    width: 1046 / 16 * 1em;
+    width: 1026 / 16 * 1em;
+    padding-left: 1.5em;
   }
 
   &__one {
@@ -162,7 +188,7 @@
   }
 }
 
-.p-card:first-child {
+/*.p-card:first-child {
   margin-left: 2.5em;
 
   @include mq-medium {
@@ -172,7 +198,7 @@
   @include mq-large {
     margin-left: 0;
   }
-}
+}*/
 
 .p-thead {
   font-size: 14px;
@@ -219,6 +245,10 @@
   &:focus {
     opacity: .5;
   }
+
+  /*@include mq-large {
+    right: 3em;
+  }*/
 }
 
 .p-button span {

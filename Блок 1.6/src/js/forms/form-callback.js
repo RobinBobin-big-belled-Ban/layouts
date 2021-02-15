@@ -1,9 +1,14 @@
 const call = document.querySelector('.button-call')
+const a_call = document.querySelector('.a-call')
 const cb_wrapper = document.querySelector('.cb-wrapper')
 const close_button = document.querySelector('.cb-form__button-container')
 
+call.addEventListener('click',
+ (event) => {
+  cb_wrapper.classList.add('cb-wrapper-on')
+})
 
-call.addEventListener('click', (event) => {
+a_call.addEventListener('click', (event) => {
   cb_wrapper.classList.add('cb-wrapper-on')
 })
 
