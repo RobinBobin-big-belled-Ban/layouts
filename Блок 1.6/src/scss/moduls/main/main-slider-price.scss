@@ -101,7 +101,10 @@
   border-radius: 6 / 16 * 1em;
   padding-left: 1em;
 
-  &::after {
+  &:first-child::after,
+  &:nth-child(2)::after,
+  &:nth-child(3)::after,
+  &:nth-child(4)::after {
     @include mq-medium {
       content: "";
       position: absolute;

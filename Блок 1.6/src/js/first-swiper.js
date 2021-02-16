@@ -44,6 +44,7 @@ const showHiddenContent = (elem, className, button) => {
 
 window.addEventListener("load", eventsHandler)
 window.addEventListener("resize", eventsHandler)
+
 showMore.addEventListener("click", () => {
   showHiddenContent(navPanel, "m-nav__container--large", showMore)
 })

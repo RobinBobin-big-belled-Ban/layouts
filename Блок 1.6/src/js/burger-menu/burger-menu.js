@@ -32,11 +32,14 @@ const elementCreater = (elemName, type, className, target) => {
 const burger_container = () => {
 
   //elementCreater('vvvv', 'div', 'cccccccc', targetElement('.right-content'))
+  let b_container_cont = document.createElement('div')
+  b_container_cont.classList.add('b-cont')
+  right_content.append(b_container_cont)
 
   let b_container = document.createElement('div')
   b_container.classList.add('b-container')
   //console.log(right_content)
-  right_content.append(b_container)
+  b_container_cont.append(b_container)
 
   //header start
   let b_header = document.createElement('div')
@@ -166,9 +169,4 @@ const burger_container = () => {
 
 
 let burger = document.querySelector('.button-burger')
-burger.addEventListener('click', burger_container
-  /*function() {
-  alert("asda")
-}*/
-
-)
+burger.addEventListener('click', burger_container)
