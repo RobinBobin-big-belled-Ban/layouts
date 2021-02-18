@@ -1,0 +1,335 @@
+.price {
+  font-size: 1rem;
+  height: 315 / 16 * 1em;
+
+  @include mq-medium {
+    height: auto;
+  }
+
+  @include mq-large {
+    height: auto;
+  }
+
+  &__init {
+    height: 260 / 16 * 1em;
+    padding-top: 1em;
+
+    @include mq-medium {
+      height: auto;
+      margin: 0 1.5em;
+      padding-bottom: 1.5em;
+    }
+
+    @include mq-large {
+      height: auto;
+      margin: 0 2em;
+      padding-bottom: 2em;
+    }
+  }
+
+  &__slider-wrapper {
+    @include mq-medium {
+      display: flex;
+      flex-flow: column;
+      height: 324 / 16 * 1em;
+      background: $bg-slider-card;
+      border-radius: 6 / 16 * 1em;
+    }
+
+    @include mq-large {
+      height: auto;
+      display: flex;
+      flex-flow: column;
+    }
+  }
+
+  &__slider-wrapper-header {
+    display: none;
+
+    @include mq-medium {
+      display: flex;
+      flex-flow: flex-start;
+      height: 48 / 16 * 1em;
+      padding-top: 15 / 16 * 1em;
+    }
+
+    @include mq-large {
+      display: flex;
+      flex-flow: flex-start;
+      height: 48 / 16 * 1em;
+      padding-top: 15 / 16 * 1em;
+    }
+  }
+
+  &__slider-wrapper-header-services {
+    font-size: 14 / 16 * 1rem;
+    line-height: 16 / 14;
+    font-style: medium;
+    font-weight: 500;
+    color: $text-grey;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    margin-bottom: 4 / 14 * 1em;
+
+    @include mq-medium {
+      width: calc(376 / 720 * 100% - 5px);
+      padding-left: 1em;
+    }
+
+    @include mq-large {
+      width: calc(346 / 720 * 100% - 5px);
+      padding-left: 1em;
+    }
+  }
+
+  &__slider-wrapper-header-cost {
+    @extend .price__slider-wrapper-header-services;
+
+    @include mq-medium {
+      width: calc(97 / 720 * 100% - 5px);
+      padding-left: 1em;
+    }
+
+    @include mq-large {
+      width: calc(127 / 720 * 100% - 5px);
+    }
+  }
+
+  &__slider-wrapper-header-time {
+    @extend .price__slider-wrapper-header-services;
+
+    @include mq-medium {
+      width: calc(101 / 720 * 100% - 5px);
+    }
+
+    @include mq-large {
+      width: calc(101 / 720 * 100% - 5px);
+    }
+  }
+
+  &__pagination {
+    @include mq-medium {
+      display: none;
+    }
+
+    @include mq-large {
+      display: none;
+    }
+  }
+}
+
+.price-slider-header {
+  @extend .slider-header;
+  height: 56 / 16 * 1em;
+}
+
+.p-slide {
+  width: 260 / 16 * 1em;
+  height: 200 / 16 * 1em;
+  background: $bg-slider-card;
+  border-radius: 6 / 16 * 1em;
+  display: flex;
+  flex-flow: column;
+
+  &:first-of-type {
+    margin-left: 1em;
+  }
+
+  @include mq-medium {
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    flex-flow: row;
+    width: 100%;
+    height: 64 / 16 * 1em;
+
+    &:nth-of-type(2)::after,
+    &:nth-of-type(3)::after,
+    &:nth-of-type(4)::after,
+    &:nth-of-type(5)::after,
+      {
+      content: "";
+      height: 1px;
+      width: 95%;
+      position: absolute;
+      background: #EAEAEA;
+      margin-left: 1em;
+    }
+  }
+
+  @include mq-large {
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    flex-flow: row;
+    width: 100%;
+    height: 64 / 16 * 1em;
+
+    &:nth-of-type(2)::after,
+    &:nth-of-type(3)::after,
+    &:nth-of-type(4)::after,
+    &:nth-of-type(5)::after,
+      {
+      content: "";
+      height: 1px;
+      width: 96%;
+      position: absolute;
+      background: #EAEAEA;
+      margin-left: 1em;
+    }
+  }
+
+  &__services {
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+    &::before {
+      content: "Ремонтные услуги";
+      display: block;
+      font-size: 14 / 16 * 1rem;
+      line-height: 16 / 14;
+      font-style: medium;
+      font-weight: 500;
+      color: $text-grey;
+      mix-blend-mode: normal;
+      opacity: 0.72;
+      margin-bottom: 4 / 14 * 1em;
+    }
+
+    @include mq-medium {
+      width: calc(376 / 720 * 100% - 5px);
+      padding-left: 1em;
+      margin: auto 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    @include mq-large {
+      width: calc(346 / 720 * 100% - 5px);
+      padding-left: 1em;
+      margin: auto 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__cost {
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+    &::before {
+      content: "Цена";
+      display: block;
+      font-size: 14 / 16 * 1rem;
+      line-height: 16 / 14;
+      font-style: medium;
+      font-weight: 500;
+      color: $text-grey;
+      mix-blend-mode: normal;
+      opacity: 0.72;
+      margin-bottom: 4 / 14 * 1em;
+    }
+
+    @include mq-medium {
+      width: calc(97 / 720 * 100% - 5px);
+      margin: auto 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    @include mq-large {
+      width: calc(127 / 720 * 100% - 5px);
+      margin: auto 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__time {
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+    &::before {
+      content: "Срок";
+      display: block;
+      font-size: 14 / 16 * 1rem;
+      line-height: 16 / 14;
+      font-style: medium;
+      font-weight: 500;
+      color: $text-grey;
+      mix-blend-mode: normal;
+      opacity: 0.72;
+      margin-bottom: 4 / 14 * 1em;
+    }
+
+    @include mq-medium {
+      width: calc(101 / 720 * 100% - 5px);
+      margin: auto 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    @include mq-large {
+      width: calc(101 / 720 * 100% - 5px);
+      margin: auto 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+.price-slider-text {
+  font-size: 14 / 16 * 1rem;
+  font-style: regular;
+  font-weight: 400;
+  line-height: 18 / 14;
+  letter-spacing: 0.2 / 14 * 1em;
+  color: $text-black;
+}
+
+.button-submit {
+  font-size: 12 / 16 * 1rem;
+  width: 119 / 12 * 1em;
+  height: 32 / 12 * 1em;
+  background:
+    url(../img/main/dropdown.svg),
+    $button-submit;
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  border-radius: 16 / 12 * 1em;
+  border: none;
+  font-style: medium;
+  font-weight: 500;
+  line-height: 2;
+  text-align: left;
+  letter-spacing: -0.15 / 12 * 1em;
+  text-transform: uppercase;
+  color: $text-white;
+  padding-left: 1.5em;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: .75;
+  }
+}

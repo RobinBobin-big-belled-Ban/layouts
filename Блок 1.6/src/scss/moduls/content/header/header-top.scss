@@ -1,0 +1,141 @@
+.header {
+
+  &__top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    background-color: $bg-white;
+    width: 100%;
+    height: 88 / 16 * 1em;
+
+    @include mq-large {
+      display: none;
+    }
+
+  }
+
+  &__burger {
+    margin: auto;
+    margin-right: 0;
+    margin-left: 1em;
+  }
+
+  &__group {
+    margin: auto;
+    margin-left: 1em;
+  }
+
+  &__buttons {
+    display: none;
+
+    @include mq-medium {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      width: 152 / 16 * 1em;
+    }
+  }
+
+  &__call {
+    margin: auto;
+  }
+
+  &__chat {
+    margin: auto;
+  }
+
+  &__profile {
+    margin: auto;
+  }
+
+  &__repair {
+    margin: auto;
+    margin-right: 1em;
+    margin-left: 0;
+  }
+
+  &__check {
+    margin: auto;
+    margin-right: 1em;
+    margin-left: 0;
+  }
+
+  &__devider-first {
+    margin: auto;
+    margin-left: 1em;
+    margin-right: 0;
+    display: none;
+
+    @include mq-medium {
+      display: block;
+    }
+  }
+
+  &__devider-second {
+    margin: auto;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+}
+
+.button-burger {
+  width: 40 / 16 * 1em;
+  height: 40 / 16 * 1em;
+  background: url(../img/header/burger.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 20 / 16 * 1em;
+  border: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: .5;
+  }
+}
+
+.link-group {
+  width: 96.55 / 16 * 1em;
+  height: 50.81 / 16 * 1em;
+  background: url(../img/header/group.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: .5;
+  }
+}
+
+.button-call {
+  @extend .button-burger;
+  background: url(../img/header/call.svg);
+}
+
+.button-chat {
+  @extend .button-burger;
+  background: url(../img/header/chat.svg);
+}
+
+.button-profile {
+  @extend .button-burger;
+  background: url(../img/header/profile.svg);
+}
+
+.button-repair {
+  @extend .button-burger;
+  background: url(../img/header/repair.svg);
+}
+
+.button-check {
+  @extend .button-burger;
+  background: url(../img/header/checkstatus.svg);
+}
+
+.devider {
+  width: 2px;
+  height: 32 / 16 * 1em;
+  border-radius: 1px;
+  background: $devider-bg-color;
+}

@@ -1,0 +1,131 @@
+.main {
+  &__about {
+    padding-bottom: 2.5em;
+
+    @include mq-medium {
+      padding: 2em 1.5em;
+    }
+
+    @include mq-large {
+      padding-left: 34 / 16 * 1em;
+      padding-right: 28.65 / 16 * 1em;
+      padding-top: .75em;
+      padding-bottom: 51 / 16 * 1em;
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    @include mq-large {
+      width: 120%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.about {
+  width: 100%;
+
+  @include mq-medium {
+    display: flex;
+  }
+
+  @include mq-large {
+    display: flex;
+  }
+
+
+  &__inform {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+
+    @include mq-medium {
+      padding: 0;
+      margin-right: 2em;
+    }
+
+    @include mq-large {
+      padding: 0;
+      margin-right: 2em;
+    }
+  }
+
+  &__paragraph {}
+
+  &__read-more {
+    @include mq-medium {
+      margin-top: 10 / 16 * 1em;
+    }
+
+    @include mq-large {
+      margin-top: 16 / 16 * 1em;
+    }
+  }
+}
+
+.information {}
+
+.paragraph-one {
+  height: auto;
+  font-style: regular;
+  font-weight: 400;
+  font-size: 14 / 16 * 1rem;
+  line-height: 20 / 14;
+  letter-spacing: 0.2 / 16 * 1em;
+  color: $text-black;
+}
+
+.paragraph-two {
+  @extend .paragraph-one;
+
+  span:first-of-type,
+  span:last-child {
+    display: none;
+  }
+
+  @include mq-medium {
+    span:first-of-type {
+      display: inline;
+    }
+  }
+
+  @include mq-large {
+
+    span:first-of-type,
+    span:last-child {
+      display: inline;
+    }
+  }
+}
+
+.read-more {
+  width: auto;
+  text-align: right;
+  font-size: 16 / 16 * 1rem;
+  line-height: 1.5;
+  letter-spacing: -0.2 / 16 * 1em;
+  color: $text-black;
+  font-family: "TT Lakes";
+  font-style: medium;
+  font-weight: 500;
+  background:
+    url(../img/main/icon.jpg),
+    $content-bg;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  border: none;
+  padding-left: 2.5em;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: .5;
+  }
+}

@@ -1,7 +1,7 @@
-$screen-small : 530px;
-$screen-medium : 768px;
-$screen-larger: 1120px;
-$screen-mega-larger: 1440px;
+$screen-small : 700px;
+$screen-medium : 1275px;
+//$screen-larger: 1120px;
+//$screen-mega-larger: 1440px;
 
 /*@mixin mq-small-up {
   @media (min-width: $screen-small) {
@@ -21,12 +21,12 @@ $screen-mega-larger: 1440px;
   }
 }
 
-@mixin mq-mega-large {
+/*@mixin mq-mega-large {
   @media (min-width: $screen-mega-larger) {
     @content;
   }
 }
-
+*/
 
 
 

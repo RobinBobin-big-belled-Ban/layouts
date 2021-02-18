@@ -1,40 +1,34 @@
-/*necessary wrappers*/
-
-.total {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  max-width: 1440 / 16 * 1em;
-  margin: 0 auto;
-
-  @unclude mq-medium {
-    display: none;
-  }
-
-  @unclude mq-large {
-    display: none;
-  }
-}
-
-.right-content {
-  margin: 0 auto;
+.wrap-aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 25;
+  background: $bg-white;
   width: 100%;
-
-  @include mq-mega-large {
-    width: 1120px;
-  }
+  height: 100%;
 }
-
-/*necessary wrappers*/
 
 .aside {
-  display: none;
-
-  @include mq-mega-large {
+  @include mq-large {
     display: flex;
     flex-direction: column;
-    background: #fff;
-    width: 308px;
+  }
+
+  &__burger {
+    display: none;
+    margin: auto 0;
+    margin-left: 1em;
+  }
+
+  &__group {
+    margin: auto 0;
+    margin-left: 22 / 16 * 1em;
+    margin-right: auto;
+  }
+
+  &__search {
+    margin: auto 0;
+    margin-right: 31 / 16 * 1em;
   }
 
   &__header {
@@ -45,7 +39,7 @@
   }
 
   &__nav {
-    min-height: 610 / 16 * 1em;
+    min-height: 680 / 16 * 1em;
   }
 
   &__list {
@@ -68,10 +62,11 @@
 
     a {
       font-size: 1rem;
+      font-style: medium;
+      font-weight: 500;
       line-height: 1.5;
       letter-spacing: -0.2 / 16 * 1em;
-      font-weight: 500;
-      color: #1B1C21;
+      color: $text-black;
       text-decoration: none;
     }
   }
@@ -94,9 +89,10 @@
     a {
       font-size: 1rem;
       line-height: 1.5;
+      font-style: medium;
       font-weight: 500;
       letter-spacing: -0.2 / 16 * 1em;
-      color: #1B1C21;
+      color: $text-black;
       text-decoration: none;
 
       &:hover,
@@ -114,8 +110,9 @@
       font-size: 24 / 16 * 1rem;
       line-height: 32 / 24 * 1em;
       letter-spacing: -0.6 / 24 * 1em;
+      font-style: bold;
       font-weight: 700;
-      color: #1B1C21;
+      color: $text-black;
       text-decoration: none;
 
       &:hover,
@@ -130,15 +127,17 @@
     display: flex;
     justify-content: space-between;
     width: 96 / 16 * 1em;
+    margin-bottom: 2em;
 
     a {
       font-weight: 500;
+      font-style: medium;
       font-size: 1rem;
       line-height: 1.5;
       letter-spacing: -0.2 / 16 * 1em;
       text-decoration: none;
       text-transform: uppercase;
-      color: #1B1C21;
+      color: $text-black;
 
       &:hover,
       &:active,
@@ -149,8 +148,7 @@
   }
 }
 
-.a-close {
-  display: none;
+.button-close {
   width: 2.5em;
   height: 2.5em;
   border: none;
@@ -164,108 +162,16 @@
   &:focus {
     opacity: .5;
   }
-
-  &__container {
-    margin: auto;
-    margin-left: 22 / 16 * 1em;
-  }
 }
 
-.a-burger {
-  display: none;
-  width: 2.5em;
-  height: 2.5em;
-  border: none;
-  border-radius: 20 / 16 * 1em;
-  background: url(../img/header/burger.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 
-  &:hover,
-  &:active,
-  &:focus {
-    opacity: .5;
-  }
 
-  &__container {
-    margin: auto;
-    margin-left: 22 / 16 * 1em;
-  }
-}
-
-.a-group {
-
-  &:hover,
-  &:active,
-  &:focus {
-    opacity: .5;
-  }
-
-  &__container {
-    margin: auto;
-    margin-left: 22 / 16 * 1em;
-  }
-}
-
-.a-search {
+.button-search {
   width: 2.5em;
   height: 2.5em;
   border: none;
   border-radius: 20 / 16 * 1em;
   background: url(../img/header/search.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-
-  &__container {
-    margin: auto;
-    margin-right: 29 / 16 * 1em;
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    opacity: .5;
-  }
-}
-
-.a-call {
-  width: 2.5em;
-  height: 2.5em;
-  border: none;
-  border-radius: 20 / 16 * 1em;
-  background: url(../img/header/call.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-
-  &:hover,
-  &:active,
-  &:focus {
-    opacity: .5;
-  }
-}
-
-.a-chat {
-  width: 2.5em;
-  height: 2.5em;
-  border: none;
-  border-radius: 20 / 16 * 1em;
-  background: url(../img/header/chat.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-
-  &:hover,
-  &:active,
-  &:focus {
-    opacity: .5;
-  }
-}
-
-.a-profile {
-  width: 2.5em;
-  height: 2.5em;
-  border: none;
-  border-radius: 20 / 16 * 1em;
-  background: url(../img/header/profile.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 

@@ -1,9 +1,15 @@
 import '../scss/style.scss'
-import './first-swiper.js'
-import './second-swiper.js'
-import './third-swiper.js'
-import './burger-menu/burger-menu.js'
-import './burger-menu/delete-menu.js'
+
+import './main/section-about.js'
+
+import './main/brand.js'
+
+import './main/tech.js'
+
+import './main/price.js'
+
 import './forms/form-callback.js'
+
 import './forms/form-feedback.js'
-import './show-more-first-block.js'
+
+import './burger.js'

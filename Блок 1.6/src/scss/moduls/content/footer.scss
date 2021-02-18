@@ -1,0 +1,96 @@
+.footer {
+
+  @include mq-medium {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5em;
+  }
+
+  @include mq-large {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+
+
+  &__date {
+    margin-bottom: 1em;
+
+    @include mq-medium {
+      width: calc(1/3 * 100% - 20px);
+    }
+
+    @include mq-large {
+      width: calc(1/3 * 100% - 20px);
+    }
+  }
+
+  &__politic {
+    margin-bottom: 1em;
+
+    @include mq-medium {
+      width: calc(1/3 * 100% - 20px);
+    }
+
+    @include mq-large {
+      width: calc(1/3 * 100% - 20px);
+    }
+  }
+
+  &__information {
+    margin-bottom: 1em;
+
+    @include mq-medium {
+      width: calc(1/3 * 100% - 20px);
+      margin-bottom: 26 / 16 * 1em;
+    }
+
+    @include mq-large {
+      width: calc(1/3 * 100% - 20px);
+      margin-bottom: 26 / 16 * 1em;
+    }
+  }
+}
+
+.date-text {
+  font-size: 14 / 16 * 1rem;
+  font-style: medium;
+  font-weight: 500;
+  line-height: 16 / 14 * 1em;
+  color: $text-black;
+  mix-blend-mode: normal;
+  text-align: center;
+  opacity: 0.72;
+
+  @include mq-medium {
+    text-align: left;
+  }
+
+  @include mq-large {
+    text-align: left;
+  }
+}
+
+.politic-text {
+  @extend .date-text;
+
+  @include mq-medium {
+    text-align: center;
+  }
+
+  @include mq-large {
+    text-align: center;
+  }
+}
+
+.information-text {
+  @extend .date-text;
+
+  @include mq-medium {
+    text-align: right;
+  }
+
+  @include mq-large {
+    text-align: right;
+  }
+}

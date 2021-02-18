@@ -6,22 +6,28 @@
 
 @import 'moduls/service/variables';
 
-@import 'moduls/header';
+@import 'moduls/content/separate_content';
 
-@import 'moduls/main/main-slider-brands';
+@import 'moduls/content/header/header-top';
 
-@import 'moduls/main/main-slider-techs';
+@import 'moduls/content/header/header-bottom';
 
-@import 'moduls/main/main-slider-price';
+@import 'moduls/content/navigation';
 
-@import 'moduls/main/offer';
+@import 'moduls/content/main/section-about';
 
-@import 'moduls/footer';
+@import 'moduls/content/main/section-brand';
 
-@import 'moduls/aside';
+@import 'moduls/content/main/section-tech';
 
-@import 'moduls/burger-menu/burger-menu';
+@import 'moduls/content/main/section-price';
 
-@import 'moduls/forms/form-callback';
+@import 'moduls/content/main/section-comercial';
 
-@import 'moduls/forms/form-feedback';
+@import 'moduls/content/footer';
+
+@import 'moduls/content/aside';
+
+@import 'moduls/content/forms/form-callback';
+
+@import 'moduls/content/forms/form-feedback';

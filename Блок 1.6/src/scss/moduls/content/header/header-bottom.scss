@@ -1,0 +1,87 @@
+.header {
+  &__bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    height: 64 / 16 *1em;
+    width: 100%;
+
+    @include mq-large {
+      height: 82 / 16 *1em;
+    }
+  }
+
+  &__text {
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 0;
+    padding-left: 1em;
+    padding-top: 4px;
+    height: 40px;
+    background: url(../img/header/highlight.jpg);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+
+    @include mq-large {
+      padding-left: 20 / 16 * 1em;
+    }
+  }
+
+  &__order {
+    display: none;
+    margin-top: auto;
+    margin-right: 30 / 16 * 1em;
+    margin-left: 0;
+
+    @include mq-large {
+      display: inline-block;
+    }
+  }
+
+  &__status {
+    display: none;
+    margin-top: auto;
+    margin-right: 30 / 16 * 1em;
+    margin-left: 0;
+
+    @include mq-large {
+      display: inline-block;
+    }
+  }
+}
+
+.text-services {
+  font-size: 28 / 16 * 1rem;
+  line-height: 40 / 28;
+  letter-spacing: -0.6 / 28 * 1em;
+  font-weight: 700;
+  color: $text-black;
+}
+
+.order {
+  height: 40 / 16 * 1em;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: -0.2 / 16 * 1em;
+  color: $text-black;
+  padding-right: 48 / 16 * 1em;
+  background: url(../img/header/repair.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: .5;
+  }
+}
+
+.status {
+  @extend .order;
+  background: url(../img/header/checkstatus.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}

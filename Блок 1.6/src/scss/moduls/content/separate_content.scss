@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-size-box: $font-size-box;
+}
+
+body {
+  font-family: $font-family;
+  background: $main-background;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  max-width: 1440 / 16 * 1em;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.aside {
+  display: none;
+
+  @include mq-large {
+    width: 308px;
+    background: $bg-white;
+  }
+}
+
+.content {
+  width: 100%;
+  background: $content-bg;
+
+  @include mq-large {
+    max-width: 1120 / 1440 * 100%;
+  }
+}
