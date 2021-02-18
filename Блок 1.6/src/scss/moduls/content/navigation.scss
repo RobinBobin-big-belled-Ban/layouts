@@ -22,6 +22,10 @@
     display: flex;
     flex-flow: row nowrap;
     overflow-x: auto;
+    
+    &::-webkit-scrollbar {
+      width: 0;
+    }
 
     @include mq-large {
       flex-flow: row wrap;
