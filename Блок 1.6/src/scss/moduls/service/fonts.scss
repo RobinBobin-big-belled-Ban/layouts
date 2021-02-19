@@ -3,12 +3,13 @@
   font-family: 'TT Lakes';
   font-style: regular;
   font-weight: 400;
-  src: local(''),
-    url('/src/fonts/TTLakes-Regular.ttf') format('ttf'),
+  src:
+    /*local(''),*/
+    //url('/src/fonts/TTLakes-Regular.ttf') format('ttf'),
     /*old format*/
-    url('/src/fonts/TTLakes-Regular.eot') format('eot'),
+    //url('/src/fonts/TTLakes-Regular.eot') format('eot'),
     /* IE */
-    url('/src/fonts/TTLakes-Regular.woff') format('woff');
+    url('../fonts/TTLakes-Regular.woff') format('woff');
   //* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -16,12 +17,13 @@
   font-family: 'TT Lakes';
   font-style: medium;
   font-weight: 500;
-  src: local(''),
-    url('/src/fonts/TTLakes-Medium.ttf') format('ttf'),
+  src:
+    /*local(''),*/
+    //url('/src/fonts/TTLakes-Medium.ttf') format('ttf'),
     //*old format*/
-    url('/src/fonts/TTLakes-Medium.eot') format('eot'),
+    //url('/src/fonts/TTLakes-Medium.eot') format('eot'),
     //* IE */
-    url('/src/fonts/TTLakes-Medium.woff') format('woff');
+    url('../fonts/TTLakes-Medium.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -29,11 +31,11 @@
   font-family: 'TT Lakes';
   font-style: bold;
   font-weight: 700;
-  src: local(''),
-    url('/src/fonts/TTLakes-Bold.ttf') format('ttf'),
+  src:
+    //url('/src/fonts/TTLakes-Bold.ttf') format('ttf'),
     /*old format*/
-    url('/src/fonts/TTLakes-Bold.eot') format('eot'),
+    //url('/src/fonts/TTLakes-Bold.eot') format('eot'),
     /* IE */
-    url('/src/fonts/TTLakes-Bold.woff') format('woff');
+    url('../fonts/TTLakes-Bold.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

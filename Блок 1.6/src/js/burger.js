@@ -3,26 +3,21 @@ const aside = document.querySelector('.aside')
 const content_container = document.querySelector('.content-container')
 const button_close = document.querySelector('.button-close')
 const aside_nav = document.querySelector('.aside__nav')
+const body = document.body;
 
 
 button_burger.addEventListener('click', () => {
   const wrap_aside = document.createElement('div')
   wrap_aside.classList.toggle('wrap-aside')
-  //wrap_aside.setAttribute('style', styles)
-  //content_container.prepend(wrap_aside)
+
   content_container.prepend(wrap_aside)
-  /*wrap_aside.prepend(aside)*/
-  aside.style.display = "block"
-  //aside.style.flexDirection = "column"
-  aside.style.position = 'absolute'
-  aside.style.zIndex = 50
-  aside.style.left = 0
-  aside.style.top = 0
-  aside.style.width = '100%'
-  aside.style.minWidth = '320px'
-  aside.style.maxWidth = '360px'
-  aside.style.boxShadow = '16px 0px 52px rgba(14, 24, 80, 0.2)'
-  aside.style.backgroundColor = '#fff'
+
+  aside.classList.add('transform')
+
+  // transform не работает, если его применять 
+  //в том же классе или одновременно с темже классом.
+  //Поэтому ты, Дмитрий, сделал задержку, чтобы создался эффект клика или вызова transform
+  setTimeout(() => aside.classList.add('tratslate-to-left'), 200)
 
 
   button_close.style.display = 'block'
@@ -35,6 +30,9 @@ button_burger.addEventListener('click', () => {
   if (innerWidth > 360) {
     aside_nav.style.minHeight = ''
   }
+
+  //Удаляю прокрутку при нажатии на вызове всплывающего меню Burger
+  body.style.overflow = 'hidden'
 })
 
 
@@ -50,16 +48,12 @@ window.addEventListener('click', (event) => {
 
 
 function get_back() {
-  aside.style.display = ''
-  aside.style.position = ''
-  aside.style.zIndex = ''
-  aside.style.left = ''
-  aside.style.top = ''
-  aside.style.width = ''
-  aside.style.minWidth = ''
-  aside.style.maxWidth = ''
-  aside.style.boxShadow = ''
-  aside.style.backgroundColor = ''
+
+  aside.classList.remove('transform')
+  aside.classList.remove('tratslate-to-left')
+
+  //возвращаю прокрутку
+  body.style.overflow = ''
 
 
   button_close.style.display = ''
